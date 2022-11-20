@@ -20,7 +20,8 @@ print(f'Привет, {name}! Как дела?') """
 ###
 
 print(float('1')) # 1.0
-print(int('2.5'))   # ValueError: invalid literal for int() with base 10: '2.5'
+print(int(float('2.5')))   # 2 хотя интереснее было бы описать ошибку
+                            # почему нельзя int('2.5')
 print(bool(1)) # True
 print(bool('')) # False
 print(bool(0)) # False
